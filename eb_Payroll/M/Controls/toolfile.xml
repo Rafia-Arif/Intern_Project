@@ -1,0 +1,28 @@
+<root>  
+    <tools name="MainToolbar" enabled="true">    
+        <tool name="BackColor" />    
+        <tool name="Bold" />    
+        <tool name="Copy" />  
+		<tool name="DecreaseSize" />    
+        <tool name="FontName" />    
+        <tool name="FontSize" />  
+		<tool name="ForeColor" />    
+        <tool name="IncreaseSize" />    
+        <tool name="InsertDate" />  
+		  <tool name="InsertTime" />    
+        <tool name="Italic" />    
+        <tool name="JustifyCenter" />  
+		<tool name="JustifyFull" />    
+        <tool name="JustifyLeft" />    
+        <tool name="JustifyRight" />  
+		<tool name="Outdent" />    
+        <tool name="Paste" />    
+        <tool name="Redo" />  
+		<tool name="StrikeThrough" />    
+        <tool name="Underline" />    
+        <tool name="Copy" />  
+		<tool name="Undo" />
+      <tool name="subjectCommandsddl" />
+      <tool name="bodyCommandsddl" />
+    </tools>
+</root>

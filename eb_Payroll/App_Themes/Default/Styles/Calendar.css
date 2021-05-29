@@ -1,0 +1,11 @@
+﻿
+
+.RadCalendar_Material .rcTemplate {
+    background: none !important;
+    color: #f90 !important;
+}
+
+.RadCalendar_Material .rcRow .rcHover .rcTemplate,
+.RadCalendar_Material .rcRow .rcSelected .rcTemplate {
+    color: #ff6d00 !important;
+}

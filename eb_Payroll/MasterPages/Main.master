@@ -1,0 +1,291 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="MasterPages_Main" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+      
+          <script type="text/javascript" language="javascript">
+ //function DisableBackButton() {
+ //    window.history.forward()
+ //}
+ //         DisableBackButton();
+ //         window.onload = DisableBackButton;
+ //         window.onpageshow = function(evt) { if (evt.persisted) DisableBackButton() }
+ //         window.onunload = function() { void (0) }
+             </script>
+<head id="Head1" runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <%--<link href="../Styles/main.css" rel="stylesheet" type="text/css" />--%>
+    <link href="../App_Themes/Default/Styles/main.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/Images/favicon.ico" />
+
+
+
+    
+   
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+
+
+<body <%= BodyClass %>>
+    <div id="alertMessage" class="error">
+    </div>
+    <form id="validate" runat="server" class="form">
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server" AsyncPostBackTimeout="5000"  >
+            <Scripts>
+                   <asp:ScriptReference Path="~/Scripts/jquery.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/spinner/ui.spinner.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/spinner/jquery.mousewheel.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery-ui-1.8.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/forms/uniform.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/forms/jquery.cleditor.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/forms/jquery.validationEngine-en.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/forms/jquery.validationEngine.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/forms/jquery.tagsinput.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/forms/autogrowtextarea.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/forms/jquery.maskedinput.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/forms/jquery.dualListBox.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/forms/jquery.inputlimiter.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/forms/chosen.jquery.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/wizard/jquery.form.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/wizard/jquery.validate.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/wizard/jquery.form.wizard.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/tables/datatable.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/tables/columnfilter.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/tables/tablesort.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/tables/resizable.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/ui/jquery.tipsy.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/ui/jquery.collapsible.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/ui/jquery.prettyPhoto.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/ui/jquery.progress.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/ui/jquery.timeentry.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/ui/jquery.colorpicker.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/ui/jquery.jgrowl.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/ui/jquery.breadcrumbs.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/ui/jquery.sourcerer.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/calendar.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/elfinder.min.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery-jrumble.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/charts/excanvas.min.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/charts/jquery.flot.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/charts/jquery.flot.orderBars.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/charts/jquery.flot.pie.js" />
+<%--                <asp:ScriptReference Path="~/Scripts/plugins/charts/jquery.flot.resize.js" />--%>
+                <asp:ScriptReference Path="~/Scripts/plugins/charts/jquery.sparkline.min.js" />
+         <%-- <asp:ScriptReference Path="~/Scripts/GridLoad.js" />--%>
+                <asp:ScriptReference Path="~/Scripts/custom.js" />
+
+            </Scripts>
+        </telerik:RadScriptManager>
+        <telerik:RadNotification ID="RadNotification1" runat="server" Position="Center"  
+             OnClientShowing="OnClientShowing"
+            OnClientHidden="OnClientHidden" LoadContentOn="PageLoad" AutoCloseDelay="60000"
+            Title="Continue Your Session" TitleIcon="Session Expiring Alert"  EnableRoundedCorners="true" Width="275" Height="120"
+            ShowCloseButton="False" Animation="Fade"  ShowTitleMenu="False" >
+            <ContentTemplate>
+                <div class="infoIcon">
+                    <asp:Image ID="iIcon" runat="server" ImageUrl="~/Images/info.png" />
+                </div>
+                <div class="notificationContent">
+                    Time remaining:&nbsp; <span id="timeLbl"></span>
+                    <telerik:RadButton  ID="continueSession" runat="server" Text="Continue Your Session"
+                        Style="margin-top: 10px;" Font-Size="9px" AutoPostBack="false" OnClientClicked="ContinueSession">
+                    </telerik:RadButton>
+                </div>
+            </ContentTemplate>
+        </telerik:RadNotification>
+        <%--<telerik:RadFormDecorator ID="RadFormDecorator1" runat="server" Skin="Default" />--%>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="clockSession" style="display:none">
+            <div class="contSession">
+                <div class="sessionExpire">
+                    Your Session will expire in
+                    <%--<%= Session.Timeout %>--%>
+                    <%= 1 %>
+
+                    minutes
+                </div>
+                <div class="showNotification">
+                    Notification will be shown in:
+                </div>
+                <div class="timeRemain">
+                    <span class="timeSeconds"><span id="mainLbl">30 </span></span>seconds
+                </div>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+
+     
+
+        //all the timers declared below are used for the demo UI only - to update UI texts.
+        //The functionality related to the scenario itself is handled by RadNotification automatically out of the box
+        var mainLblCounter = null;
+        var timeLeftCounter = null;
+        var seconds = 0;
+        var secondsBeforeShow = 0;
+        var mainLabel;
+
+        //start the main label counter when the page loads
+        function pageLoad() {
+            if (!$find("<%= RadNotification1.ClientID %>").get_enabled())
+                return;
+
+            var showInterval = $find("<%= RadNotification1.ClientID %>").get_showInterval()/1000;
+
+            seconds = 5;
+//            seconds = showInterval;
+
+            secondsBeforeShow = showInterval;
+//            secondsBeforeShow = showInterval;
+
+            var xmlPanel = $find("<%= RadNotification1.ClientID %>")._xmlPanel;
+            xmlPanel.set_enableClientScriptEvaluation(true);
+      
+          mainLabel = $get("mainLbl"); resetTimer("mainLblCounter", updateMainLabel, 1000);
+
+        };
+
+        //stop timers for UI
+        function stopTimer(timer) {
+            clearInterval(this[timer]);
+            this[timer] = null;
+        };
+
+        //reset timers for UI
+        function resetTimer(timer, func, interval) {
+            this.stopTimer(timer);
+            this[timer] = setInterval(Function.createDelegate(this, func), interval);
+        };
+
+        function OnClientShowing(sender, args) {
+            //deal with UI labels
+            mainLabel.innerHTML = 0;
+            resetTimer("timeLeftCounter", UpdateTimeLabel, 1000);
+            stopTimer("mainLblCounter");
+        }
+
+        function updateMainLabel(toReset) {
+            secondsBeforeShow = (toReset == true) ? 60 : secondsBeforeShow - 1;
+            mainLabel.innerHTML = secondsBeforeShow;
+        }
+
+        function OnClientHidden() {
+            updateMainLabel(true);
+            mainLabel.style.display = "";
+            resetTimer("mainLblCounter", updateMainLabel, 1000);
+        }
+
+
+        //-----------------------end of code related only to the demo UI --------------------------------------//
+
+
+        //update the text in the label in RadNotification
+        //this could also be done automatically by using UpdateInterval. However, this will cause callbacks [which is the second best solution than javascript] on every second that is being count
+        function UpdateTimeLabel(toReset) {
+            var sessionExpired = (seconds == 0);
+            if (sessionExpired) {
+                stopTimer("timeLeftCounter");
+                //redirect to session expired page - simply take the url which RadNotification sent from the server to the client as value
+                window.location.href = $find("<%= RadNotification1.ClientID %>").get_value();
+                }
+                else {
+                    var timeLbl = $get("timeLbl");
+                    timeLbl.innerHTML = seconds--;
+                }
+            }
+
+            function ContinueSession() {
+                var notification = $find("<%= RadNotification1.ClientID %>");
+            //we need to contact the server to restart the Session - the fastest way is via callback
+            //calling update() automatically performs the callback, no need for any additional code or control
+            notification.update();
+            notification.hide();
+
+            //resets the showInterval for the scenario where the Notification is not disposed (e.g. an AJAX request is made)
+            //You need to inject a call to the ContinueSession() function from the code behind in such a request
+            var showIntervalStorage = notification.get_showInterval(); //store the original value
+            notification.set_showInterval(0); //change the timer to avoid untimely showing, 0 disables automatic showing
+            notification.set_showInterval(showIntervalStorage); //sets back the original interval which will start counting from its full value again
+
+            stopTimer("timeLeftCounter");
+            seconds = showInterval;
+            updateMainLabel(true);
+        }
+
+    </script>
+    <script>
+
+
+        function showError(str, redirect, delay) {
+
+            if (delay) {
+                $('#alertMessage').removeClass('success info warning').addClass('error').html(str).stop(true, true).show().animate({ opacity: 1, right: '10' }, 500, function () {
+                    $(this).delay(delay).animate({ opacity: 0, right: '-20' }, 500, function () { $(this).hide(); if(redirect != null) { redirectWindow(redirect);} });
+                });
+                return false;
+            }
+            $('#alertMessage').addClass('error').html(str).stop(true, true).show().animate({ opacity: 1, right: '10' }, 500);
+        }
+        function showSuccess(str, redirect, delay) {
+            if (delay) {
+                $('#alertMessage').removeClass('error info warning').addClass('success').html(str).stop(true, true).show().animate({ opacity: 1, right: '10' }, 500, function () {
+                    $(this).delay(delay).animate({ opacity: 0, right: '-20' }, 500, function () { $(this).hide(); if (redirect != null) { redirectWindow(redirect); } });
+                });
+                return false;
+            }
+            $('#alertMessage').addClass('success').html(str).stop(true, true).show().animate({ opacity: 1, right: '10' }, 500);
+        }
+        function showWarning(str, redirect, delay) {
+            if (delay) {
+                $('#alertMessage').removeClass('error success  info').addClass('warning').html(str).stop(true, true).show().animate({ opacity: 1, right: '10' }, 500, function () {
+                    $(this).delay(delay).animate({ opacity: 0, right: '-20' }, 500, function () { if (redirect != null) { redirectWindow(redirect); } });
+                });
+                return false;
+            }
+            $('#alertMessage').addClass('warning').html(str).stop(true, true).show().animate({ opacity: 1, right: '10' }, 500);
+        }
+        function showInfo(str, redirect, delay) {
+            if (delay) {
+                $('#alertMessage').removeClass('error success  warning').html(str).stop(true, true).show().animate({ opacity: 1, right: '10' }, 500, function () {
+                    $(this).delay(delay).animate({ opacity: 0, right: '-20' }, 500, function () { $(this).hide(); if (redirect != null) { redirectWindow(redirect); } });
+                });
+                return false;
+            }
+            $('#alertMessage').html(str).stop(true, true).show().animate({ opacity: 1, right: '10' }, 500);
+        }
+        function redirectWindow(str) {
+            if (str != "") {
+                window.location = str;
+            }
+        }
+
+        $('#alertMessage').click(function () {
+            $(this).hide();
+        });
+
+        //===== Datepickers =====//
+
+        $(".datepicker").datepicker({
+            defaultDate: +7,
+            autoSize: true,
+            appendText: '(<%= System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern.ToLower().Replace("yyyy","yy")%>)',
+            dateFormat: '<%= System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern.ToLower().Replace("yyyy","yy")%>',
+        });
+
+        $(".datepickerInline").datepicker({
+            defaultDate: +7,
+            autoSize: true,
+            appendText: '(<%= System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern.ToLower().Replace("yyyy","yy")%>)',
+            dateFormat: '<%= System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern.ToLower().Replace("yyyy","yy")%>',
+            numberOfMonths: 1
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+/*===== Rad Combobox ========*/
+
+.UnReadRowClass
+        {
+            font-weight: bold;
+        }
+
+.RadComboBox_Silk .rcbInputCell, .RadComboBox_Silk .rcbArrowCell
+{
+    border-width: 0px !important;
+}
+
+.RadGrid_Silk .rgFilter
+    { 
+         background: url(../../../images/124.ico) no-repeat !important; 
+    }
+.RadGrid_Silk input.rgFilterBox {
+    /*width: 100px !important;*/
+    height: 10px !important;
+    width: 60px !important;
+    margin:0.5px !important;
+}
+
+.RadComboBox_Silk .rcbArrowCell a
+{
+   background-position: -10px -65px !important;
+}
+.ddlVisible
+ {
+    width:152px !important;
+    margin-top:-14px !important;
+ }
+
+.RadComboBox .rcbInputCellLeft
+{
+    box-shadow:none;
+    position: relative !important; 
+    height: 25px !important; 
+    /*background: url(../../../images/forms/select_left.png) no-repeat top left !important;*/ 
+    float: left !important; 
+    width: 213px !important; 
+    padding:5px 0 0 10px !important; 
+    margin-top: 0px !important;
+    border-bottom : 0px !important;
+}
+.RadComboBox .rcbInputCellLeft input
+{
+    box-shadow:none;
+    width: auto !important;     
+    background-color:transparent !important; 
+    height:21px!important;
+    font-size:12px!important;
+    margin-left:-11px;
+    margin-top:-6px;
+    padding-right : 5px !important;
+}
+span .RadComboBox .rcbInputCellLeft
+{
+    box-shadow:none;
+    position: relative !important; 
+    /*height: 26px !important;*/ 
+    height: 16px !important; 
+    /*background: url(../../../images/forms/select_left.png) no-repeat top left !important;*/ 
+    float: left !important; 
+    width: 114px !important; 
+    padding:5px 0 0 10px !important; 
+    margin-top: 0px !important;
+    border-bottom : 0px !important;
+    
+}
+span .RadComboBox .rcbInputCellLeft input
+{
+    box-shadow:none;
+    width: 145px !important;     
+    background-color:transparent !important; 
+    /*height:22px!important;*/
+    height:12px!important;
+    font-size:12px!important;
+    margin-left:-11px;
+    margin-top:-6px;
+    padding-right : 5px !important;
+}
+.combo180 .RadComboBox .rcbInputCellLeft
+{
+    box-shadow:none;
+    position: relative !important; 
+    height: 27px !important; 
+    /*background: url(../../../images/forms/select_left.png) no-repeat top left !important;*/ 
+    float: left !important; 
+    width: 142px !important; 
+    padding:5px 0 0 10px !important; 
+    margin-top: 0px !important;
+    border-bottom : 0px !important;
+    
+}
+.combo180 .RadComboBox .rcbInputCellLeft input
+{
+    box-shadow:none;
+    /*width: 145px !important;*/ 
+    width: 173px !important;       
+    background-color:transparent !important; 
+    height:24px!important;
+    font-size:12px!important;
+    margin-left:-11px;
+    margin-top:-6px;
+    padding-right : 5px !important;
+    /*border:none;*/
+    /*border-right: 1px solid #DDD;*/
+}
+
+.combo125 .RadComboBox .rcbInputCellLeft
+{
+    box-shadow:none;
+    position: relative !important; 
+    height: 25px !important; 
+    /*background: url(../../../images/forms/select_left.png) no-repeat top left !important;*/ 
+    float: left !important; 
+    width: 85px !important; 
+    padding:5px 0 0 10px !important; 
+    margin-top: 0px !important;
+    border-bottom : 0px !important;
+    
+}
+.combo125 .RadComboBox .rcbInputCellLeft input
+{
+    box-shadow:none;
+    width: 100px !important;     
+    background-color:transparent !important; 
+    height:21px!important;
+    font-size:12px!important;
+    margin-left:-11px;
+    margin-top:-6px;
+    padding-right : 5px !important;
+}
+.RadComboBox select { width: 200px !important; font-size: 12px !important;height: 28px !important; }
+.RadComboBox .rcbArrowCellRight  
+{
+    vertical-align:middle;
+    width: 28px  !important;
+    cursor: pointer  !important; 
+    /*height: 25px  !important;*/ 
+     height: 16px  !important; 
+    /*background: url(../../../images/forms/select_right.png) no-repeat top right  !important;*/
+}
+.RadComboBox a
+{
+    width: 28px  !important;
+    cursor: pointer  !important; 
+    height: 16px  !important; 
+    /*height: 25px  !important;*/ 
+}
+
+.rcbSlide {
+    margin: -5px 0 5px 0!important;
+}
+.RadComboBoxDropDown {
+    /*min-width:250px;*/
+    margin: 0 0 5px 0!important;
+    padding:0px!important;
+}
+.RadComboBoxDropDown .rcbItem,.RadComboBoxDropDown .rcbHovered,.RadComboBoxDropDown .rcbDisabled,.RadComboBoxDropDown .rcbLoading,.RadComboBoxDropDown .rcbList,.RadComboBoxDropDown .rcbScroll,.RadComboBoxDropDown .rcbScrol
+{
+    margin:0!important;
+    padding:0!important;
+    overflow:hidden!important;
+    border:0!important;
+   width:100%;
+}
+
+.RadInput {
+width:98%!important;
+}
+
+
+
+
+.RadInput  .riTextBox,.RadInput  .riEmpty { 
+font-size: 11px!important; padding: 7px 6px!important; background: white!important; border: 1px solid #DDD!important; font-family: Arial, Helvetica, sans-serif!important; box-shadow: 0 0 0 2px #f4f4f4!important; -webkit-box-shadow: 0 0 0 2px #f4f4f4!important; -moz-box-shadow: 0 0 0 2px #f4f4f4!important; color: #656565!important; width:100%;} 
+.RadInput  .riTextBox :hover,.RadInput  .riEmpty :hover { border-color: #d5d9dc!important; background: #fdfdfd!important; }
+.RadInput  .riTextBox :focus,.RadInput  .riEmpty :focus { border-color: #d5d9dc!important; background: #fff!important; -webkit-box-shadow: 0 0 0 2px #f4f4f4!important; box-shadow: 0 0 0 2px #f4f4f4!important; -moz-box-shadow: 0 0 0 2px #f4f4f4!important; }
+
+
+.btnControlB ul li { display: inline-block; margin: 5px 0px 0 0px; background: url(../../../images/backgrounds/horControlB.png) repeat-x; border: 1px solid #d5d5d5; text-align: center; box-shadow: inset 0 0 0 1px #fff; -webkit-box-shadow: inset 0 0 0 1px #fff; -moz-box-shadow: inset 0 0 0 1px #fff; }
+.btnControlB ul li:hover { background-position: 0 -43px; }
+.btnControlB ul li:active { background-position: 0 -86px; }
+.btnControlB ul li div {  display: block; font-weight: bold; white-space: nowrap; color: #626262; }
+.btnControlB ul li input { float: left; margin: 12px 12px 10px 12px; }
+.btnControlB ul li a { display: block; margin: 0px 0 0 40px; padding: 10px 16px 8px 16px; border-left: 1px solid #d5d5d5; color: #595959; } 
+
+.form .filter_column  input[type=text]{ width:90%!important; font-size: 11px!important; padding:5px!important; background: white!important; border: 1px solid #DDD!important; font-family: Arial, Helvetica, sans-serif!important; box-shadow: 0 0 0 2px #f4f4f4!important; -webkit-box-shadow: 0 0 0 2px #f4f4f4!important; -moz-box-shadow: 0 0 0 2px #f4f4f4!important; color: #656565!important; } 
+.form .filter_column  input[type=text]:hover { border-color: #d5d9dc!important; background: #fdfdfd!important; }
+.form .filter_column  input[type=text]:focus{ width:90%!important; font-size: 11px!important; padding:5px!important; background: white!important; border: 1px solid #DDD!important; font-family: Arial, Helvetica, sans-serif!important; box-shadow: 0 0 0 2px #f4f4f4!important; -webkit-box-shadow: 0 0 0 2px #f4f4f4!important; -moz-box-shadow: 0 0 0 2px #f4f4f4!important; color: #656565!important; }
+
+.dataTables_filter > label{
+float: none!important;
+margin: 10px!important;
+padding: 0!important;
+cursor: none!important;
+}
+
+table.display tfoot th,table.display thead th
+{
+    padding-left:0px!important;
+}
+
+table.display tfoot {
+    display:table-header-group!important;
+}
+
+ 
+.ruFileWrap > input {
+width:200px!important;
+}
+.ruFileWrap > label {
+
+}
+
+.rgEditForm > table {
+margin:10px;
+margin-right:0px!important;
+}
+.rgEditForm > table  tr {
+height:30px!important;
+}
+
+.rgEditForm > table tr td:first-child {
+min-width: 110px;/*80px!important;*/
+}
+
+/*Legends*/
+.middleNav {
+    text-align:center;
+}
+ul.legends li
+{
+   display:block;
+   float:left;
+   width:60px; 
+   padding: 5px;text-align:center;
+}
+ul.legends
+{
+   margin-top:10px;
+}
+
+.rgMasterTable td span {
+float:none!important;
+}
+
+.clockSession
+{
+     width: 409px;
+     height: 174px;
+     background: url(../../../Images/clockSession.jpg) no-repeat;
+}
+           
+.contSession
+{
+     width: 270px;
+     float: right;
+     text-align: center;
+     margin: 20px 20px 0 0 ;
+}
+           
+.sessionExpire
+{
+     color: #3366ff;
+     padding-top: 30px;
+}
+
+.showNotification
+{
+     padding-top: 15px;
+     color: #666;
+}
+           
+.timeRemain
+{
+     padding-top: 5px;
+     color: #000;
+}
+           
+.timeSeconds
+{
+     font-size: 30px;
+     padding-right: 5px;
+}
+           
+.infoIcon, .notificationContent
+{
+     display: inline-block;
+    zoom: 1;
+     *display: inline;
+}
+           
+.infoIcon
+{
+     width: 32px;
+     height: 32px;
+     margin: 0 10px ;
+     vertical-align: top;
+}
+           
+.notificationContent
+{
+     width: 160px;
+     vertical-align: bottom;
+}
+
+ div.RadUpload .ruBrowse, div.RadUpload .ruBrowse .ruButtonHover
+  {
+ /*   background-image: url('../../../images/addFiles.png') !important;
+    background-position: 10px 0px !important;
+    background-repeat:no-repeat;
+    height: 24px !important;
+    width: 0px !important;
+    font-size:1px;
+    margin:1.5px 0 0 -33px;*/
+  width: 70px !important;
+    
+  }
+ div.RadUpload .ruFakeInput
+  {
+    width: 200px;
+  }
+
+div.uploader .action {
+    display:none;
+}
+
+
+/************ Form Extra fields *************/
+
+.table-ExtraFields
+{
+	border: 1px solid #656565;
+}
+
+.table-ExtraFields tr th:first-child
+{
+	min-width: 140px !important;
+}
+
+.table-ExtraFields tr td
+{
+	padding: 2px;
+}
+	.table-ExtraFields tr td.check-required
+	{
+		text-align: center;
+	}
+    .rgRow 
+{
+font-size:11px;
+}
+
+.rgAltRow
+{
+font-size:11px;
+}
+
+.rgFilterRow {
+height:14px !important;
+}
+/*.RadGrid_Silk input.rgFilterBox {
+height:17px !important;}*/
+
+
+ /*.reToolCell
+        {
+            display: none;
+
+
+.rbDecorated {
+    background-position: right 0px !important
+}

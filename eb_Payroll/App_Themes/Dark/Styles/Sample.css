@@ -1,0 +1,1292 @@
+﻿@import "reset.css";
+@import "fullcalendar.css";
+@import "datatable.css";
+@import "ui_custom.css";
+@import "prettyPhoto.css";
+@import "elfinder.css";
+@import "web.css";
+
+
+
+
+
+/*------------------------------*/
+.RadAutoCompleteBox {
+    color: #fff !important
+}
+
+    .RadAutoCompleteBox .racTokenList {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadAutoCompleteBox .racToken {
+        border-radius: 3px !important;
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#3c3b3b,#222) !important
+    }
+
+    .RadAutoCompleteBox .racTokenList.racHovered {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadAutoCompleteBox .racToken.racHovered {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+    .RadAutoCompleteBox .racTokenList.racFocused {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadAutoCompleteBox .racToken.racFocused {
+        border-color: #145ca4 !important;
+        box-shadow: inset 0 0 5px #145ca4 !important
+    }
+
+    .RadAutoCompleteBox .racToken.racSelected {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+    .RadAutoCompleteBox .p-i-loading {
+        background-image: url(" ") !important
+    }
+
+.RadAutoCompleteBoxPopup {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadAutoCompleteBoxPopup .racItemHovered {
+        color: #fff !important;
+        background-color: #333 !important
+    }
+
+    .RadAutoCompleteBoxPopup .racFocused {
+        box-shadow: inset 0 0 5px #145ca4 !important
+    }
+
+    .RadAutoCompleteBoxPopup .racItemSelected {
+        color: #fff !important;
+        background-color: #1976d2 !important
+    }
+
+    /*-------------------*/
+.RadBreadcrumb {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadBreadcrumb:focus, .RadBreadcrumb.k-state-focused {
+        box-shadow: 0 0 2px 1px rgba(0,0,0,0.06) !important
+    }
+
+    .RadBreadcrumb .k-breadcrumb-link {
+        color: #1976d2 !important;
+        transition: background-color 0.2s ease !important
+    }
+
+        .RadBreadcrumb .k-breadcrumb-link:hover, .RadBreadcrumb .k-breadcrumb-link.k-state-hover {
+            color: #11508e !important;
+            background-color: #222 !important
+        }
+
+        .RadBreadcrumb .k-breadcrumb-link:focus, .RadBreadcrumb .k-breadcrumb-link.k-state-focused {
+            color: #1976d2 !important;
+            box-shadow: inset 0 0 0 2px rgba(0,0,0,0.13) !important
+        }
+
+    .RadBreadcrumb .k-breadcrumb-root-link {
+        color: inherit !important;
+        transition: background-color 0.2s ease !important
+    }
+
+        .RadBreadcrumb .k-breadcrumb-root-link:hover, .RadBreadcrumb .k-breadcrumb-root-link.k-state-hover {
+            background-color: #222 !important
+        }
+
+        .RadBreadcrumb .k-breadcrumb-root-link:focus, .RadBreadcrumb .k-breadcrumb-root-link.k-state-focused {
+            box-shadow: inset 0 0 0 2px rgba(0,0,0,0.13) !important
+        }
+
+    .RadBreadcrumb .k-breadcrumb-root-link, .RadBreadcrumb .k-breadcrumb-delimiter-icon {
+        color: inherit !important
+    }
+
+    .RadBreadcrumb .k-breadcrumb-input-container {
+        border-color: transparent !important
+    }
+
+    .RadBreadcrumb .k-textbox, .RadBreadcrumb .radTextbox {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+/*===================*/
+.RadButton.rbButton, .RadButton.rbButton.rbDisabled, .RadButton .rbSplitPart {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important;
+    background-image: linear-gradient(#3c3b3b,#222) !important
+}
+
+    .RadButton.rbButton.rbHovered, .RadButton.rbButton.rbToggled.rbHovered, .RadButton.rbButton .rbHovered {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+    .RadButton.rbButton:focus {
+        box-shadow: inset 0 0 5px rgba(20,92,164,0.5) !important
+    }
+
+    .RadButton.rbButton.rbSelected, .RadButton.rbButton.rbToggled, .RadButton.rbSelected .rbHovered {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+    .RadButton.rbButton:hover, .RadButton.rbButton.rbHovered .rbSplitPart {
+        border-color: #1a1919 !important
+    }
+
+    .RadButton.rbButton.rbSelected, .RadButton.rbButton.rbSelected:active .rbSplitPart {
+        border-color: #145ca4 !important
+    }
+
+.RadButton.rbCheckBox .rbText, .RadButton.rbRadioButton .rbText, .RadButton.rbToggleButton .rbText {
+    color: #fff !important
+}
+
+.RadButton .rbToggleCheckboxChecked, .RadButton .rbToggleCheckboxFilled, .RadButton .rbToggleRadioChecked {
+    color: #1976d2 !important
+}
+
+.RadButton.rbHovered .rbToggleCheckboxChecked, .RadButton.rbHovered .rbToggleCheckboxFilled, .RadButton.rbHovered .rbToggleRadioChecked {
+    color: #11508e !important
+}
+
+.RadButton:focus .rbToggleCheckbox:before, .RadButton:focus .rbToggleRadio:before {
+    box-shadow: 0 0 1px 1px rgba(255,255,255,0.5) !important
+}
+
+.RadButton:focus .rbToggleCheckboxChecked:before, .RadButton:focus .rbToggleCheckboxFilled:before, .RadButton:focus .rbToggleRadioChecked:before {
+    box-shadow: 0 0 1px 1px rgba(25,118,210,0.5) !important
+}
+
+.RadButton.rbPrimaryButton {
+    border-color: #1667b7 !important;
+    color: #fff !important;
+    background-color: #1976d2 !important;
+    background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0)) !important
+}
+
+    .RadButton.rbPrimaryButton.rbHovered, .RadButton.rbPrimaryButton.rbToggled.rbHovered, .RadButton.rbPrimaryButton.rbFocused {
+        border-color: #12579b !important;
+        color: #fff !important;
+        background-color: #1667b7 !important;
+        background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0)) !important;
+        box-shadow: none
+    }
+
+    .RadButton.rbPrimaryButton.rbSelected, .RadButton.rbPrimaryButton.rbToggled {
+        border-color: #0f4880 !important;
+        color: #fff !important;
+        background-color: #12579b !important;
+        background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0)) !important
+    }
+
+    .RadButton.rbPrimaryButton.rbDisabled {
+        border-color: #1667b7 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0)) !important
+    }
+    /*--------------*/
+.RadCalendar {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadCalendar .rcTitlebar {
+        border-color: #090808 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#363636,#222) !important
+    }
+
+    .RadCalendar .t-button:hover {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+    .RadCalendar .t-button:focus, .RadCalendar .t-button:active {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+    .RadCalendar td {
+        border-color: transparent !important
+    }
+
+    .RadCalendar th {
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadCalendar .rcHeader, .RadCalendar .rcFooter {
+        border-color: #090808 !important
+    }
+
+    .RadCalendar .rcWeek th {
+        border-color: #090808 !important;
+        color: #fff !important
+    }
+
+    .RadCalendar .rcWeek .rcViewSel {
+        background-color: #222 !important
+    }
+
+    .RadCalendar .rcToday a, .RadCalendar .rcToday span {
+        border-color: #1976d2 !important;
+        color: #1976d2 !important
+    }
+
+    .RadCalendar .rcHover a, .RadCalendar .rcHover span {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+    .RadCalendar .rcSelected a, .RadCalendar .rcSelected span {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+    .RadCalendar .rcFocus {
+        border-color: #145ca4 !important;
+        box-shadow: inset 0 0 5px #145ca4 !important
+    }
+
+.RadCalendarMultiView .rcTitlebar {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important;
+    background-image: linear-gradient(#3c3b3b,#222) !important
+}
+
+.RadCalendarMultiView .rcCalendar {
+    border-color: #000 !important
+}
+
+.RadCalendarMultiView td.rcTitle {
+    border-color: #090808 !important;
+    color: #fff !important;
+    background-color: #222 !important;
+    background-image: linear-gradient(#363636,#222) !important
+}
+
+.RadCalendarMonthView {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadCalendarMonthView a:hover {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+    .RadCalendarMonthView .rcSelected a {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+    .RadCalendarMonthView .rcFocus {
+        border-color: #145ca4 !important;
+        box-shadow: inset 0 0 5px #145ca4 !important
+    }
+
+    .RadCalendarMonthView .rcButtons a {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#3c3b3b,#222) !important
+    }
+
+        .RadCalendarMonthView .rcButtons a:hover {
+            border-color: #1a1919 !important;
+            color: #fff !important;
+            background-color: #333 !important;
+            background-image: linear-gradient(#4d4c4c,#333) !important
+        }
+
+        .RadCalendarMonthView .rcButtons a:focus, .RadCalendarMonthView .rcButtons a:active {
+            border-color: #145ca4 !important;
+            color: #fff !important;
+            background-color: #1976d2 !important;
+            background-image: linear-gradient(#378fe7,#1976d2) !important
+        }
+
+.RadCalendarTimeView {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadCalendarTimeView th {
+        border-color: #090808 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#363636,#222) !important
+    }
+
+    .RadCalendarTimeView td {
+        border-color: #000 !important
+    }
+
+    .RadCalendarTimeView .rcSelected a {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+    .RadCalendarTimeView .rcHover a {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+    .RadCalendarTimeView .rcFocus {
+        box-shadow: inset 0 0 5px #145ca4 !important
+    }
+
+    .RadCalendarTimeView .rcFooter {
+        border-color: #000 !important
+    }
+
+.RadPicker .riLabel {
+    color: #fff !important
+}
+
+.RadPicker.rcCalPopupOpen .RadInput, .RadPicker.rcMYPopupOpen .RadInput, .RadPicker.rcTimePopupOpen .RadInput {
+    border-color: #145ca4 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+.RadPicker.rcCalPopupOpen .rcCalPopup, .RadPicker.rcMYPopupOpen .rcCalPopup, .RadPicker.rcTimePopupOpen .rcTimePopup {
+    border-color: #145ca4 !important;
+    color: #fff !important;
+    background-color: #1976d2 !important;
+    background-image: linear-gradient(#378fe7,#1976d2) !important
+
+}
+/*************/
+.RadCard.k-card {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadCard.k-card:focus, .RadCard.k-card.k-state-focus {
+        box-shadow: 0 3px 4px 0 rgba(0,0,0,0.06) !important
+    }
+
+    .RadCard.k-card .k-card-callout {
+        border-color: #000 !important;
+        background-color: #222 !important
+    }
+
+    .RadCard.k-card .k-card-actions {
+        border-color: #000 !important
+    }
+
+.RadCard.k-state-primary, .RadCard .RadCard.k-card.k-card-primary, .RadCard .RadCard.k-card.k-state-primary {
+    background-color: #d1e4f6 !important;
+    color: #0d3d6d !important;
+    border-color: #bfd9f2 !important
+}
+
+.RadCard.k-state-info, .RadCard .RadCard.k-card.k-card-info, .RadCard .RadCard.k-card.k-state-info {
+    background-color: #d8e6fb !important;
+    color: #20437b !important;
+    border-color: #c9dbfa !important
+}
+
+.RadCard.k-state-success, .RadCard .RadCard.k-card.k-card-success, .RadCard .RadCard.k-card.k-state-success {
+    background-color: #dff3d6 !important;
+    color: #31651a !important;
+    border-color: #d2eec6 !important
+}
+
+.RadCard.k-state-warning, .RadCard .RadCard.k-card.k-card-warning, .RadCard .RadCard.k-card.k-state-warning {
+    background-color: #fff5d8 !important;
+    color: #846b20 !important;
+    border-color: #fef1c9 !important
+}
+
+.RadCard.k-state-error, .RadCard .RadCard.k-card.k-card-error, .RadCard .RadCard.k-card.k-state-error {
+    background-color: #f7d1d3 !important;
+    color: #6f0d12 !important;
+    border-color: #f3bfc1 !important
+}
+
+.RadCard .k-card-header {
+    border-color: #090808 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+.RadCard .k-card-footer {
+    border-color: #090808 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+.RadCard .k-card-separator {
+    border-color: #000 !important
+}
+
+.RadCard .k-card-subtitle {
+    color: #858585 !important
+}
+
+.k-state-primary .RadCard .k-card-subtitle, .RadCard .k-card.k-card-primary .RadCard .k-card-subtitle, .k-state-info .RadCard .k-card-subtitle, .RadCard .k-card.k-card-info .RadCard .k-card-subtitle, .k-state-success .RadCard .k-card-subtitle, .RadCard .k-card.k-card-success .RadCard .k-card-subtitle, .k-state-warning .RadCard .k-card-subtitle, .RadCard .k-card.k-card-warning .RadCard .k-card-subtitle, .k-state-error .RadCard .k-card-subtitle, .RadCard .k-card.k-card-error .RadCard .k-card-subtitle {
+    color: inherit !important
+}
+
+.RadCard .k-card-wrap.k-state-focused > .k-card, .RadCard .k-card-wrap.k-state-selected > .k-card {
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,0.13) !important
+}
+
+.RadCard .k-card:focus .k-card-callout.k-callout-n, .RadCard .k-card.k-state-focus .k-card-callout.k-callout-n {
+    box-shadow: 1px -1px 4px 0 rgba(0,0,0,0.06) !important
+}
+
+.RadCard .k-card:focus .k-card-callout.k-callout-e, .RadCard .k-card.k-state-focus .k-card-callout.k-callout-e {
+    box-shadow: 2px -1px 4px 0 rgba(0,0,0,0.06) !important
+}
+
+.RadCard .k-card:focus .k-card-callout.k-callout-s, .RadCard .k-card.k-state-focus .k-card-callout.k-callout-s {
+    box-shadow: 2px -2px 4px 0 rgba(0,0,0,0.06) !important
+}
+
+.RadCard .k-card:focus .k-card-callout.k-callout-w, .RadCard .k-card.k-state-focus .k-card-callout.k-callout-w {
+    box-shadow: 2px -1px 4px 0 rgba(0,0,0,0.06) !important
+}
+/*****************/
+.RadCloudUpload {
+    color: #fff !important
+}
+
+    .RadCloudUpload .rcuButton {
+        border-radius: 3px !important;
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#3c3b3b,#222) !important
+    }
+
+    .RadCloudUpload .rcuInfoPanel {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadCloudUpload .rcuHeader {
+        border-color: #090808 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#363636,#222) !important
+    }
+
+    .RadCloudUpload .rcuFileList {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadCloudUpload .rcuProgressBar {
+        border-radius: 6px !important;
+        border-color: #090808 !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.5)) !important
+    }
+
+    .RadCloudUpload .rcuProgress {
+        border-radius: 6px !important;
+        border-color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0)) !important
+    }
+
+    .RadCloudUpload .p-i-loading {
+        background-image: url(" ") !important
+    }
+
+    .RadCloudUpload .rcuDropZone {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important
+    }
+
+    .RadCloudUpload .rcuButton.rcuHovered {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+    .RadCloudUpload .rcuButtons .rcuHovered {
+        border-color: transparent !important;
+        color: #1976d2 !important;
+        background: none !important;
+        box-shadow: none !important
+    }
+
+    .RadCloudUpload .rcuButton.rcuPressed {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+.rcuToolTip {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+/*********/
+.RadColorPicker .rcpPalette {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+.RadColorPicker .rcpHeader {
+    border-color: #090808 !important;
+    color: #fff !important;
+    background-color: #222 !important;
+    background-image: linear-gradient(#363636,#222) !important
+}
+
+.RadColorPicker .rcpImageButton, .RadColorPicker a.rslDraghandle {
+    color: #fff !important
+}
+
+    .RadColorPicker .rcpImageButton:hover {
+        color: #1976d2 !important
+    }
+
+.RadColorPicker .rcpIcon em, .RadColorPicker .rcpColorPreview, .RadColorPicker .rcpInput, .RadColorPicker .rcpHexInput, .RadColorPicker .rcpMillionColorsPalette, .RadColorPicker .rcpMillionColorsSlider div.rslTrack {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+.RadColorPicker .rcpIcon a, .RadColorPicker .rcpTabs li, .RadColorPicker .rcpButton {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important;
+    background-image: linear-gradient(#3c3b3b,#222) !important
+}
+
+    .RadColorPicker .rcpIcon a:hover, .RadColorPicker .rcpTabs li:hover, .RadColorPicker .rcpButton:hover {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+    .RadColorPicker .rcpIcon a:active, .RadColorPicker .rcpTabs .rcpSelectedTab, .RadColorPicker .rcpTabs .rcpSelectedTab:hover, .RadColorPicker .rcpButton:active {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+    .RadColorPicker .rcpIcon a:focus {
+        box-shadow: inset 0 0 5px rgba(20,92,164,0.5) !important
+    }
+
+.RadColorPicker.rcpCustomColorWrapper .rcpPalette {
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5) !important
+}
+
+.RadColorPicker .rcpSlider.RadSlider a.rslDraghandle, .RadColorPicker .rcpMillionColorsSlider.RadSlider a.rslDraghandle {
+    color: #fff !important
+}
+
+    .RadColorPicker .rcpSlider.RadSlider a.rslDraghandle:hover, .RadColorPicker .rcpSlider.RadSlider a.rslDraghandle:active, .RadColorPicker .rcpSlider.RadSlider a.rslDraghandle:focus, .RadColorPicker .rcpMillionColorsSlider.RadSlider a.rslDraghandle:hover, .RadColorPicker .rcpMillionColorsSlider.RadSlider a.rslDraghandle:active, .RadColorPicker .rcpMillionColorsSlider.RadSlider a.rslDraghandle:focus {
+        color: #1976d2 !important
+    }
+    /***************/
+.RadComboBox {
+    color: #fff !important
+}
+
+    .RadComboBox .rcbInner {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        border-radius: 3px !important
+    }
+
+    .RadComboBox .rcbActionButton {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#3c3b3b,#222) !important;
+        border-radius: 0 3px 3px 0 !important
+    }
+
+    .RadComboBox .rcbHovered {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+        .RadComboBox .rcbHovered .rcbActionButton {
+            border-color: #1a1919 !important;
+            color: #fff !important;
+            background-color: #333 !important;
+            background-image: linear-gradient(#4d4c4c,#333) !important
+        }
+
+    .RadComboBox .rcbFocused, .RadComboBox .rcbExpanded {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+        .RadComboBox .rcbFocused .rcbActionButton, .RadComboBox .rcbExpanded .rcbActionButton {
+            border-color: #145ca4 !important;
+            color: #fff !important;
+            background-color: #1976d2 !important;
+            background-image: linear-gradient(#378fe7,#1976d2) !important
+        }
+
+    .RadComboBox .rcbReadOnly {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#3c3b3b,#222) !important
+    }
+
+        .RadComboBox .rcbReadOnly.rcbHovered {
+            border-color: #1a1919 !important;
+            color: #fff !important;
+            background-color: #333 !important;
+            background-image: linear-gradient(#4d4c4c,#333) !important
+        }
+
+        .RadComboBox .rcbReadOnly.rcbFocused, .RadComboBox .rcbReadOnly.rcbExpanded {
+            border-color: #145ca4 !important;
+            color: #fff !important;
+            background-color: #1976d2 !important;
+            background-image: linear-gradient(#378fe7,#1976d2) !important
+        }
+
+.RadComboBoxtl .rcbActionButton {
+    border-radius: 3px 0 0 3px !important
+}
+
+.RadComboBoxDropDown {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadComboBoxDropDown .rcbSeparator {
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadComboBoxDropDown .rcbHovered {
+        color: #fff !important;
+        background-color: #333 !important
+    }
+
+    .RadComboBoxDropDown .rcbSelected {
+        color: #fff !important;
+        background-color: #1976d2 !important
+    }
+
+    .RadComboBoxDropDown .rcbLoading {
+        color: #fff !important;
+        background-color: #333 !important
+    }
+
+    .RadComboBoxDropDown .rcbItem em {
+        color: #fff !important;
+        background-color: #333 !important
+    }
+
+    .RadComboBoxDropDown .rcbCheckAllItemsHovered {
+        color: #fff !important;
+        background-color: #333 !important
+    }
+    /***************/
+.RadDataForm {
+    color: #fff !important
+}
+
+    .RadDataForm .rdfLegend, .RadDataForm .rdfBorders {
+        border-color: #000 !important
+    }
+
+    .RadDataForm .rdfHr {
+        color: #000 !important
+    }
+
+    .RadDataForm .rdfFieldHint {
+        color: #fff !important
+    }
+    /***************/
+.RadDataPager {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadDataPager .rdpNumPart a {
+        border-radius: 2px !important;
+        color: inherit !important
+    }
+
+        .RadDataPager .rdpNumPart a:hover {
+            border-color: #1a1919 !important;
+            color: #fff !important;
+            background-color: #333 !important;
+            background-image: linear-gradient(#4d4c4c,#333) !important
+        }
+
+        .RadDataPager .rdpNumPart a.rdpCurrentPage {
+            border-color: #1976d2 !important;
+            color: #1976d2 !important;
+            background: none !important
+        }
+
+    .RadDataPager .rdpPagerButton, .RadDataPager .rdpActionButton {
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-radius: 2px !important;
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#3c3b3b,#222) !important
+    }
+
+        .RadDataPager .rdpPagerButton:hover, .RadDataPager .rdpActionButton:hover {
+            border-color: #1a1919 !important;
+            color: #fff !important;
+            background-color: #333 !important;
+            background-image: linear-gradient(#4d4c4c,#333) !important
+        }
+        /**********/
+.RadDock {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadDock .rdTitleWrapper {
+        border-color: #090808 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#363636,#222) !important;
+        border-color: inherit !important
+    }
+
+    .RadDock .rdCommandButton:hover {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+    /***********/
+.RadDrawer {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadDrawer .k-drawer {
+        background-color: #222 !important;
+        color: #fff !important;
+        border-color: #000 !important
+    }
+
+    .RadDrawer .k-drawer-wrapper {
+        scrollbar-color: rgba(156,156,156,0.7) #dedede !important
+    }
+
+        .RadDrawer .k-drawer-wrapper::-webkit-scrollbar-track {
+            background: #dedede !important
+        }
+
+        .RadDrawer .k-drawer-wrapper::-webkit-scrollbar-thumb {
+            background: rgba(156,156,156,0.7) !important
+        }
+
+            .RadDrawer .k-drawer-wrapper::-webkit-scrollbar-thumb:hover {
+                background: #9c9c9c !important
+            }
+
+    .RadDrawer .k-drawer-item:hover, .RadDrawer .k-drawer-item.k-state-hover {
+        color: #fff !important;
+        background-color: #333 !important;
+        cursor: pointer !important
+    }
+
+    .RadDrawer .k-drawer-item:focus, .RadDrawer .k-drawer-item.k-state-focused {
+        background-color: #222 !important;
+        box-shadow: inset 0 0 0 2px rgba(0,0,0,0.13) !important
+    }
+
+        .RadDrawer .k-drawer-item:focus:hover, .RadDrawer .k-drawer-item:focus.k-state-hover, .RadDrawer .k-drawer-item.k-state-focused:hover, .RadDrawer .k-drawer-item.k-state-focused.k-state-hover {
+            color: #fff !important;
+            background-color: #333 !important
+        }
+
+    .RadDrawer .k-drawer-item.k-state-selected {
+        color: #fff !important;
+        background-color: #1976d2 !important
+    }
+
+        .RadDrawer .k-drawer-item.k-state-selected:hover, .RadDrawer .k-drawer-item.k-state-selected.k-state-hover {
+            color: #fff !important;
+            background-color: #176dc1 !important
+
+        }
+
+    .RadDrawer .k-drawer-separator {
+        background-color: #000 !important
+    }
+    /***********/
+.RadMultiColumnComboBox .k-icon.k-i-loading {
+    background-color: transparent !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important
+}
+
+.RadMultiColumnComboBox .k-i-loading {
+    background-image: url(" ") !important
+}
+
+.RadMultiColumnComboBox .k-input {
+    padding: 4px 10px !important
+}
+
+.RadMultiColumnComboBox .k-dropdown-wrap {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important;
+    border-radius: 4px !important
+}
+
+.RadMultiColumnComboBox .k-select {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important;
+    background-image: linear-gradient(#3c3b3b,#222) !important;
+    border-radius: 0 4px 4px 0 !important
+}
+
+.RadMultiColumnComboBox > :hover, .RadMultiColumnComboBox .k-state-hover {
+    border-color: #1a1919 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadMultiColumnComboBox > :hover .k-select, .RadMultiColumnComboBox .k-state-hover .k-select {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+.RadMultiColumnComboBox .k-state-focused {
+    border-color: #145ca4 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+.RadMultiColumnComboBox .k-state-active {
+    border-color: #145ca4 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadMultiColumnComboBox .k-state-active .k-select {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+.RadMultiColumnComboBoxtl .k-select {
+    border-radius: 4px 0 0 4px !important;
+    border-width: 0 1px 0 0 !important
+}
+
+.RadMultiColumnComboBoxDropDown {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadMultiColumnComboBoxDropDown .k-header {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadMultiColumnComboBoxDropDown .k-footer {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadMultiColumnComboBoxDropDown .k-group-header {
+        border-color: #000 !important;
+        color: #fff !important; 
+        background-color: #222 !important
+    }
+
+    .RadMultiColumnComboBoxDropDown .k-item:nth-child(2n) {
+        background-color: rgba(255,255,255,0.04) !important
+    }
+
+    .RadMultiColumnComboBoxDropDown .k-cell {
+        border-color: #000 !important
+    }
+
+    .RadMultiColumnComboBoxDropDown .k-item.k-state-hover {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #101010 !important
+    }
+
+    .RadMultiColumnComboBoxDropDown .k-item.k-state-selected {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: rgba(25,118,210,0.25) !important
+    }
+
+    .RadMultiColumnComboBoxDropDown .k-item.k-state-focused {
+        box-shadow: inset 0 0 0 2px rgba(0,0,0,0.13) !important
+    }
+
+    .RadMultiColumnComboBoxDropDown .k-group-cell span {
+        background-color: #fff !important;
+        color: #222 !important
+    }
+
+    .RadMultiColumnComboBoxDropDown .k-grid-list > .k-item.k-last > .k-cell, .RadMultiColumnComboBoxDropDown .k-grid-list > .k-item.k-last > .k-group-cell, .RadMultiColumnComboBoxDropDown .k-grid-list > .k-item.k-last > .k-spacer-cell {
+        border-bottom-color: #fff !important
+    }
+    /*****************/
+.RadDropDownList {
+    color: #fff !important
+}
+
+    .RadDropDownList .rddlInner {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#3c3b3b,#222) !important;
+        border-radius: 3px !important
+    }
+
+    .RadDropDownList .rddlHovered {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+    .RadDropDownList .rddlFocused {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+.rddlPopup {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .rddlPopup .rddlItemHovered, .rddlPopup .rddlItemLoading {
+        color: #fff !important;
+        background-color: #333 !important
+    }
+
+    .rddlPopup .rddlItemSelected {
+        color: #fff !important;
+        background-color: #1976d2 !important
+    }
+    /*****************/
+.RadDropDownTree {
+    color: #fff !important
+}
+
+    .RadDropDownTree .rddtInner {
+        border-radius: 3px !important;
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#3c3b3b,#222) !important
+    }
+
+    .RadDropDownTree .rddtHovered {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+    .RadDropDownTree .rddtFocused {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+.rddtPopup {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .rddtPopup .rddtFilter {
+        background-color: #222 !important
+    }
+
+    .rddtPopup .rddtFilterInput {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .rddtPopup .RadTreeView em {
+        color: #fff !important;
+        background-color: #333 !important
+    }
+
+    .rddtPopup .rddtFilterInput.rddtHovered {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .rddtPopup .rddtFilterInput.rddtFocused {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+    /**************************/
+.RadEditor {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadEditor .reToolBar, .RadEditor.rePopupContainer, .RadEditor .rePopupTitle, .RadEditor .reCommentInfoPanel, .RadEditor .reCommentView, .RadEditor .reCommentViewText, .RadEditor .reCommentEdit {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#3c3b3b,#222) !important
+    }
+
+    .RadEditor .rePopupButton, .RadEditor .reCommentButton, .RadEditor .reAjaxSpellButton {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important;
+        background-image: linear-gradient(#3c3b3b,#222) !important
+    }
+
+        .RadEditor .reTool:hover, .RadEditor .reToolText:hover, .RadEditor .reModes a:hover, .RadEditor .reDropdown:hover, .RadEditor .reSpinBoxButtons span:hover, .RadEditor.reInsertTable .reTool:hover:before, .RadEditor.reAlignmentSelector td div:hover:before, .RadEditor .rePopupButton:hover, .RadEditor .reCommentButton:hover, .RadEditor .reAjaxSpellButton:hover {
+            border-color: #1a1919 !important;
+            color: #fff !important;
+            background-color: #333 !important;
+            background-image: linear-gradient(#4d4c4c,#333) !important
+        }
+
+        .RadEditor .reTool:active, .RadEditor .reTool:focus, .RadEditor .reToolText:active, .RadEditor .reToolText:focus, .RadEditor .reToolSelected, .RadEditor .reToolSelected:hover, .RadEditor .reModes a:active, .RadEditor .reModes a:focus, .RadEditor .reModes .reSelectedMode, .RadEditor .reModes .reSelectedMode:hover, .RadEditor .reDropdown:active, .RadEditor .reDropdown:focus, .RadEditor .reSpinBoxButtons span:active, .RadEditor .reSpinBoxButtons span:focus, .RadEditor .rePopupButton:active, .RadEditor .rePopupButton:focus, .RadEditor .reCommentButton:active, .RadEditor .reCommentButton:focus, .RadEditor .reAjaxSpellButton:focus, .RadEditor .reAjaxSpellButton:active {
+            border-color: #145ca4 !important;
+            color: #fff !important;
+            background-color: #1976d2 !important;
+            background-image: linear-gradient(#378fe7,#1976d2) !important
+        }
+
+    .RadEditor .reTool.reToolIcon span, .RadEditor .reTool.reToolIcon:before, .RadEditor .reDropdown, .RadEditor .reToolText, .RadEditor .reModes a, .RadEditor .reDOMElement, .RadEditor .reCustomColor, .RadEditor .reCustomLinks a {
+        color: #fff !important
+    }
+
+    .RadEditor .reTool:hover .reSplitArrow {
+        border-left-color: #1a1919 !important
+    }
+
+    .RadEditor .reTool:active .reSplitArrow, .RadEditor .reTool:focus .reSplitArrow {
+        border-left-color: #145ca4 !important
+    }
+
+    .RadEditor .reSeparator {
+        border-right-color: rgba(255,255,255,0.85) !important;
+        border-left-color: rgba(0,0,0,0.9) !important
+    }
+
+    .RadEditor .reToolBarWrapperLeft .reSeparator, .RadEditor .reToolBarWrapperRight .reSeparator {
+        border-color: #000 !important
+    }
+
+    .RadEditor .reContent {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadEditor .reTableDiv .reModule, .RadEditor .reTableDiv .reRow {
+        border-top-color: #000 !important
+    }
+
+    .RadEditor .reDropdown, .RadEditor .reDropdown.reToolDisabled, .RadEditor .reDropdown.reToolDisabled:hover, .RadEditor .reDropdown.reToolDisabled:active, .RadEditor .reDropdown.reToolDisabled:focus {
+        background-color: #222 !important;
+        border-color: #000 !important
+    }
+
+    .RadEditor .reRemoveDOMElement, .RadEditor .reRemoveDOMElement:before {
+        color: #d51923 !important
+    }
+
+    .RadEditor.reDropDownBody.reAjaxSpellCheck input[type="text"], .RadEditor .reTableDiv input[type="text"] {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+        .RadEditor.reDropDownBody.reAjaxSpellCheck input[type="text"]:hover, .RadEditor .reTableDiv input[type="text"]:hover {
+            border-color: #1a1919 !important;
+            color: #fff !important;
+            background-color: #222 !important
+        }
+
+        .RadEditor.reDropDownBody.reAjaxSpellCheck input[type="text"]:focus, .RadEditor .reTableDiv input[type="text"]:focus, .RadEditor.reDropDownBody.reAjaxSpellCheck input[type="text"]:active, .RadEditor .reTableDiv input[type="text"]:active {
+            border-color: #145ca4 !important;
+            color: #fff !important;
+            background-color: #222 !important
+        }
+
+    .RadEditor.reInlineEditor:hover {
+        border-color: #1a1919 !important
+    }
+
+    .RadEditor.RadWindow, .RadEditor.RadWindow.reInlineEditor:hover, .RadEditor.reInlineEditorSelected, .RadEditor.reInlineEditorSelected:hover {
+        border-color: #000 !important
+    }
+
+        .RadEditor.RadWindow, .RadEditor.RadWindow .rwContent {
+            background-color: #222 !important
+        }
+
+    .RadEditor.reDropDownBody {
+        background-color: #222 !important
+    }
+
+        .RadEditor.reDropDownBody li:hover {
+            color: #fff !important;
+            background-color: #333 !important
+        }
+
+    .RadEditor.reInsertTable td {
+        border-color: #fff !important
+    }
+
+    .RadEditor .reFormatSetsHeader, .RadEditor.reInsertTable .reItemOver {
+        color: #fff !important;
+        background-color: #333 !important
+    }
+
+.reTool .reNoAlignment {
+    color: #fff !important
+}
+/**************/
+.RadFileExplorer {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+
+    .RadFileExplorer .rfeFilterTxt, .RadFileExplorer .rfeAddressBox {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadFileExplorer .rfeLink:hover {
+        border-color: #1a1919 !important;
+        color: #fff !important;
+        background-color: #333 !important;
+        background-image: linear-gradient(#4d4c4c,#333) !important
+    }
+
+    .RadFileExplorer .rfeSelectedLink, .RadFileExplorer .rfeSelectedLink:hover {
+        border-color: #145ca4 !important;
+        color: #fff !important;
+        background-color: #1976d2 !important;
+        background-image: linear-gradient(#378fe7,#1976d2) !important
+    }
+
+    .RadFileExplorer .rfeDropZone, .RadFileExplorer .rfeFilterContainer, .RadFileExplorer .rfePageControlContainer {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+    .RadFileExplorer .rfeDropUploadInfoPanel {
+        border-color: #000 !important;
+        color: #fff !important;
+        background-color: #222 !important
+    }
+
+.RadWindow .rfeUploadInfoPanel {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #222 !important
+}
+/******************/

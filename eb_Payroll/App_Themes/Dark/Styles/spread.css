@@ -1,0 +1,48 @@
+﻿.color-container {
+    margin: 0px 5px;
+    border-collapse: collapse;
+}
+
+    .color-container:hover {
+        border-radius: 4px;
+        box-shadow: inset 0px 0px 5px grey;
+        cursor: pointer;
+    }
+
+.color {
+    width: 23px;
+    height: 21px;
+    border-radius: 3px;
+    margin-right: 5px;
+    position: relative;
+    box-shadow: inset 0px 0px 5px black;
+}
+
+    .color:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 49%, rgba(255,255,255,0.3) 50%);
+    }
+
+.color-large {
+    width: 50px;
+}
+
+#lblMessage {
+    margin-right: 10px;
+}
+
+.expandable {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    margin-left: 3px;
+    text-align: center;
+}

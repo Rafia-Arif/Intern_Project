@@ -1,0 +1,369 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs"
+Inherits="MasterPages_UserMasterPage" MasterPageFile="~/MasterPages/Main.master" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<%@ Register Src="~/M/Controls/UserMenu.ascx" TagName="ucMenu" TagPrefix="uc1" %>
+<%@ Register Src="~/M/Controls/TopMenu.ascx" TagName="ucTopMenu" TagPrefix="uc2" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+
+    <asp:HiddenField ID="hdnval" ClientIDMode="Static" runat="server" EnableViewState="true" />
+    <asp:HiddenField ID="hdntype" ClientIDMode="Static" runat="server" EnableViewState="true" />
+    <asp:HiddenField ID="hdnRedirectUrl" ClientIDMode="Static" runat="server" EnableViewState="true" />
+
+    <telerik:RadScriptBlock ID="RadScriptBlock1" runat="server">
+        <script type="text/javascript">
+            function itemOpened(s, e) {
+                if ($telerik.isIE8) {
+                    // Fix an IE 8 bug that causes the list bullets to disappear (standards mode only)
+                    $telerik.$("li", e.get_item().get_element())
+                        .each(function () {
+                            this.style.cssText = this.style.cssText;
+                        });
+                }
+            }
+        </script>
+    </telerik:RadScriptBlock>
+    
+    <style type="text/css">
+        .RadSiteMap .rsmColumn {
+                width: 33% !important;
+            }
+
+        @media only screen and (min-width: 0px) and (max-width: 600px)
+        {
+            .RadSiteMap .rsmColumn {
+                width: 100% !important;
+            }
+        }
+
+    </style>
+    <!-- Right side -->
+    <div id="rightSide">
+        <!-- Top fixed navigation -->
+        <div class="topNav">
+            <div class="wrapper">
+                <div class="welcome">
+                    <asp:Image ID="iUserImage" runat="server" style="max-height:200px;max-width:200px;height:auto;width:auto;" />
+                    <span>Welcome,</span>
+                    <asp:Label ID="lblLoggedInAs" runat="server" Style="padding: 4px 0px; margin: 0px"></asp:Label>
+                    <span></span>
+                
+                </div>
+                <%--<br />--%>
+                <div class="welcome2" id="serverName">
+                    <asp:Image ID="imgServer" runat="server" />
+                    <span>Company : </span>
+                    <asp:Label ID="lblCompanyName" runat="server" Style="padding: 4px 0px; margin: 0px"></asp:Label>
+                    <span></span>
+                
+                </div>
+                <%--    <div class="resp">
+            <div class="respHead">
+               <a href="default.aspx">
+                   <%--<img src="../images/logo.gif" alt="" /> 
+                <img id="imgLogo2" runat="server" alt="Logo"   />
+                </a>
+            </div>
+            <div class="cLine">
+            </div>
+          <div id="smallmenu" class="smalldd">
+                <span class="goTo">
+                    <div class="">
+                    </div>
+                </span>
+                <ul class="smallDropdown">
+                    <uc1:ucMenu ID="ucMenuSmall" runat="server" />
+                </ul>
+            </div> 
+            <div class="cLine">
+            </div>
+        </div>--%>
+                <div class="welcome3" id="dbName">
+                    <asp:Image ID="imgDb" runat="server" />
+                    <span>&nbsp;</span><span></span></div>
+                <div class="userNav">
+                    <ul>
+                        <uc2:ucTopMenu ID="ucTopMenu1" runat="server"  />
+                
+                    </ul>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <%--<div style="float:left">
+            <div class="logo">
+                <a href="default.aspx">
+                    <img id="imgLogo" runat="server" alt="Logo" />
+                </a>
+            </div>
+        </div>--%>
+            
+        <div class="demo-container no-bg">
+            <div id="MegaDropDown">
+                <telerik:RadMenu RenderMode="Lightweight" runat="server" ID="topRadMenu"  OnClientItemOpened="itemOpened"
+                                 Width="100%" Height="100%" EnableShadows="true">
+                    <Items>
+                        <telerik:RadMenuItem Text="Home" NavigateUrl="../Dashboards/Dashboard.aspx" PostBack="true" CssClass="additionalMenuItem">
+                            <ContentTemplate>
+                                <div id="CatWrapper" class="Wrapper" style="width: 550px;">
+                                    <h3>Payroll</h3>
+                                    <telerik:RadSiteMap ID="dashboardRadSiteMap" runat="server" Skin="Telerik" EnableTextHTMLEncoding="true">
+                                        <LevelSettings>
+                                            <telerik:SiteMapLevelSetting Level="0">
+                                                <ListLayout RepeatColumns="3" RepeatDirection="Vertical" />
+                                            </telerik:SiteMapLevelSetting>
+                                        </LevelSettings>
+                                    </telerik:RadSiteMap>
+                                </div>
+                            </ContentTemplate>
+                        </telerik:RadMenuItem>
+                            
+                        <telerik:RadMenuItem Text="Master" PostBack="false" CssClass="additionalMenuItem">
+                            <ContentTemplate>
+                                <div id="CatWrapper" class="Wrapper" style="width: 550px;">
+                                    <h3>Payroll</h3>
+                                    <telerik:RadSiteMap ID="masterRadSiteMap" runat="server"  EnableTextHTMLEncoding="true">
+                                        <LevelSettings>
+                                            <telerik:SiteMapLevelSetting Level="0">
+                                                <ListLayout RepeatColumns="3" RepeatDirection="Vertical" />
+                                            </telerik:SiteMapLevelSetting>
+                                        </LevelSettings>
+                                    </telerik:RadSiteMap>
+                                </div>
+                            </ContentTemplate>
+                        </telerik:RadMenuItem>
+                            
+                        <telerik:RadMenuItem Text="Setup" PostBack="false" CssClass="additionalMenuItem">
+                            <ContentTemplate>
+                                <div id="CatWrapper" class="Wrapper" style="width: 550px;">
+                                    <h3>Payroll</h3>
+                                    <telerik:RadSiteMap ID="setupRadSiteMap" runat="server"  EnableTextHTMLEncoding="true">
+                                        <LevelSettings>
+                                            <telerik:SiteMapLevelSetting Level="0">
+                                                <ListLayout RepeatColumns="3" RepeatDirection="Vertical" />
+                                            </telerik:SiteMapLevelSetting>
+                                        </LevelSettings>
+                                    </telerik:RadSiteMap>
+                                </div>
+                            </ContentTemplate>
+                        </telerik:RadMenuItem>
+                            
+                        <telerik:RadMenuItem Text="Transactions" PostBack="false">
+                            <ContentTemplate>
+                                <div id="CatWrapper" class="Wrapper" style="width: 550px;">
+                                    <h3>Payroll</h3>
+                                    <telerik:RadSiteMap ID="transactionRadSiteMap" runat="server"  EnableTextHTMLEncoding="true">
+                                        <LevelSettings>
+                                            <telerik:SiteMapLevelSetting Level="0">
+                                                <ListLayout RepeatColumns="3" RepeatDirection="Vertical" />
+                                            </telerik:SiteMapLevelSetting>
+                                        </LevelSettings>
+                                    </telerik:RadSiteMap>
+                                </div>
+                            </ContentTemplate>
+                        </telerik:RadMenuItem>
+			
+                        <telerik:RadMenuItem Text="Utilities" PostBack="false" CssClass="additionalMenuItem">
+                            <ContentTemplate>
+                                <div id="CatWrapper" class="Wrapper" style="width: 550px;">
+                                    <h3>Payroll</h3>
+                                    <telerik:RadSiteMap ID="UtilitiesRadSiteMap" runat="server"  EnableTextHTMLEncoding="true">
+                                        <LevelSettings>
+                                            <telerik:SiteMapLevelSetting Level="0">
+                                                <ListLayout RepeatColumns="3" RepeatDirection="Vertical" />
+                                            </telerik:SiteMapLevelSetting>
+                                        </LevelSettings>
+                                    </telerik:RadSiteMap>
+                                </div>
+                            </ContentTemplate>
+                        </telerik:RadMenuItem>
+                            
+                        <telerik:RadMenuItem Text="Graphs" PostBack="false" CssClass="additionalMenuItem">
+                            <ContentTemplate>
+                                <div id="CatWrapper" class="Wrapper" style="width: 550px;">
+                                    <h3>Payroll</h3>
+                                    <telerik:RadSiteMap ID="graphRadSiteMap" runat="server"  EnableTextHTMLEncoding="true">
+                                        <LevelSettings>
+                                            <telerik:SiteMapLevelSetting Level="0">
+                                                <ListLayout RepeatColumns="3" RepeatDirection="Vertical" />
+                                            </telerik:SiteMapLevelSetting>
+                                        </LevelSettings>
+                                    </telerik:RadSiteMap>
+                                </div>
+                            </ContentTemplate>
+                        </telerik:RadMenuItem>
+                            
+                        <telerik:RadMenuItem Text="Reports" PostBack="false" CssClass="additionalMenuItem">
+                            <ContentTemplate>
+                                <div id="CatWrapper" class="Wrapper" style="width: 550px;">
+                                    <h3>Payroll</h3>
+                                    <telerik:RadSiteMap ID="reportsRadSiteMap" runat="server" EnableTextHTMLEncoding="true">
+                                        <LevelSettings>
+                                            <telerik:SiteMapLevelSetting Level="0">
+                                                <ListLayout RepeatColumns="3" RepeatDirection="Vertical" />
+                                            </telerik:SiteMapLevelSetting>
+                                        </LevelSettings>
+                                    </telerik:RadSiteMap>
+                                </div>
+                            </ContentTemplate>
+                        </telerik:RadMenuItem>
+                
+                    </Items>
+                </telerik:RadMenu>
+        
+            </div>
+        </div>
+        
+        <!-- Responsive header invisble-->
+        <%--  <div class="resHeader">
+                <div class="logo">
+                <a href="default.aspx">
+                    <img id="imgLogo" runat="server" alt="Logo" src="~/images/logo.png" style="max-height:200px;max-width:200px;height:auto;width:auto;" />
+                </a>
+            </div>
+        </div> --%>
+            
+        <%--<div style="float:left">
+            <div class="logo">
+                <a href="default.aspx">
+                    <img id="imgLogo" runat="server" alt="Logo" />
+                </a>
+            </div>
+        </div>--%>
+
+        <!-- Responsive header visible (invisible for mobile view)-->
+      <%--  <div class="resHeader">
+                <div class="logo">
+                <a href="default.aspx">
+                    <img id="imgLogo" runat="server" alt="Logo" src="~/images/logo.png" style="max-height:200px;max-width:200px;height:auto;width:auto;" />
+                </a>
+            </div>
+        </div> --%>
+        
+        <!-- Title area -->
+        <div class="titleArea" style="height:40px">
+            <div class="wrapper">
+                  
+                 <!-- Left side content -->
+   
+              <!--
+                <div class="middleNav" style="visibility:hidden">
+                    <div class="middleNavHeadding">
+                        <h6>Application Legends</h6>
+                    </div>
+                    <ul class="legends">
+                            
+                        <li>
+                            <div>
+                                <asp:Image ID="Image9" runat="server" AlternateText="" ImageUrl="~/Images/16x16_approved.png" />
+                                <p>Approved</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <asp:Image ID="Image10" runat="server" AlternateText="" ImageUrl="~/Images/16x16_rejected.png" />
+                                <p>Rejected</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <asp:Image ID="Image3" runat="server" AlternateText="" ImageUrl="~/Images/16x16_recall.png" />
+                                <p>Recall</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <asp:Image ID="Image5" runat="server" AlternateText="" ImageUrl="~/Images/16x16_process.png" />
+                                <p>In Process</p>
+                            </div>
+                        </li>
+                      
+                        <li>
+                            <div>
+                                <asp:Image ID="Image2" runat="server" AlternateText="" ImageUrl="~/Images/16x16_tick2.png" />
+                                <p>Submit</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <asp:Image ID="Image1" runat="server" AlternateText="" ImageUrl="~/Images/16x16_pencil.png" />
+                                <p>Edit</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <asp:Image ID="Image6" runat="server" AlternateText="" ImageUrl="~/Images/view.png" />
+                                <p>View</p>
+                            </div>
+                        </li>
+                            
+                        <li>
+                            <div>
+                                <asp:Image ID="Image4" runat="server" AlternateText="" ImageUrl="~/Images/Delete.png" />
+                                <p>Delete</p>
+                            </div>
+                        </li>
+                            
+                        <li>
+                            <div>
+                                <asp:Image ID="Imagechart" runat="server" AlternateText="" ImageUrl="~/Images/chart.png" />
+                                <p>Chart</p>
+                            </div>
+                        </li>
+                          <li>
+                            <div>
+                                <asp:Image ID="Image11" runat="server" AlternateText="" ImageUrl="~/Images/16x16_Check.png" />
+                                <p>Decision Pending</p>
+                            </div>
+                        </li>
+
+                        <li>
+                                
+                            <div>
+                                <asp:Image ID="Image7" runat="server" AlternateText="" ImageUrl="~/Images/att_r.png" />
+                                <p>Attachment Exists</p>
+                            </div>
+                        </li>
+                
+                    </ul>
+                </div>
+                -->
+                  <div class="pageTitle">
+                    <h5>
+                        <asp:Literal ID="ltPageTitle" runat="server"></asp:Literal>
+                    </h5>
+                    <span>
+                        <asp:Literal ID="ltPageDesc" runat="server"></asp:Literal>
+                    </span>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+        <asp:ContentPlaceHolder ID="ControlContent" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <!-- Main content wrapper -->
+        
+        <asp:ContentPlaceHolder ID="mainContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+        <!-- Footer line -->
+        <div id="footer">
+            <div class="wrapper">
+            </div>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel1" runat="server" Skin="BlackMetroTouch" Transparency="20">
+    </telerik:RadAjaxLoadingPanel>
+</asp:Content>

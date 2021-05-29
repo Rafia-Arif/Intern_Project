@@ -1,0 +1,45 @@
+@import "_variables.scss";
+
+// Colors
+$link-color: $awesome-lighter;
+$link-hover-color: darken($orange, 15%);
+
+$body-bg: $gray-900;
+$body-color: $gray-100;
+
+$table-dark-bg: $awesome;
+$card-cap-bg: $awesome-light;
+$card-cap-color: $gray-100;
+
+$pagination-color: $awesome;
+$pagination-hover-color: darken($orange, 15%);
+
+// Toast
+$toast-background-color: rgba($white, 1);
+
+// Cards
+$card-bg: $gray-800;
+
+// Lists
+$list-group-bg: $gray-700;
+$list-group-color: $gray-200;
+$list-group-hover-bg: $gray-600;
+
+// Used Controls:["Menu","TreeView"]
+$base-theme:Default;
+$skin-name:blacktheme;
+$swatch-name:Default Black;
+$accent: #1976d2;
+$accent-contrast: #ffffff;
+$text-color: #ffffff;
+$bg-color: #222;
+$base-text: #ffffff;
+$base-bg: #222;
+$hovered-text: #ffffff;
+$hovered-bg: #333;
+$selected-text: #ffffff;
+$selected-bg: #1976d2;
+@import 'Menu.Default';
+@import 'TreeView.Default';
+
+@import "../libs/bootstrap/scss/bootstrap.scss";

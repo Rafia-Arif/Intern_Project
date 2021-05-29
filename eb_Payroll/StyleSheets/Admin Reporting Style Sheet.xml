@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StyleSheet xmlns="http://schemas.telerik.com/reporting/2012/3.4">
+  <StyleRule>
+    <Style>
+      <BorderStyle Bottom="Solid" />
+      <BorderWidth Default="1pt" Bottom="3pt" />
+    </Style>
+    <Selectors>
+      <StyleSelector Type="PageHeaderSection" StyleName="PageHeader" />
+    </Selectors>
+  </StyleRule>
+  <StyleRule>
+    <Style>
+      <BorderStyle Top="Solid" />
+    </Style>
+    <Selectors>
+      <StyleSelector Type="PageFooterSection" StyleName="PageFooter" />
+    </Selectors>
+  </StyleRule>
+  <StyleRule>
+    <Style VerticalAlign="Middle">
+      <Font Name="Segoe UI Light" Size="25pt" Bold="True" />
+    </Style>
+    <Selectors>
+      <StyleSelector Type="TextBox" StyleName="HeadingText" />
+    </Selectors>
+  </StyleRule>
+  <StyleRule>
+    <Style>
+      <BorderStyle Top="None" Bottom="Solid" />
+    </Style>
+    <Selectors>
+      <StyleSelector Type="TextBox" StyleName="ReportHeader" />
+    </Selectors>
+  </StyleRule>
+  <StyleRule>
+    <Style TextAlign="Center" VerticalAlign="Middle">
+      <Font Name="Segoe UI Light" Size="9pt" />
+    </Style>
+    <Selectors>
+      <StyleSelector Type="TextBox" StyleName="FooterText" />
+    </Selectors>
+  </StyleRule>
+  <StyleRule>
+    <Style VerticalAlign="Middle">
+      <BorderStyle Bottom="None" Left="None" Right="None" />
+      <BorderColor Default="Black" />
+      <Font Name="Segoe UI" Bold="False" Size="9pt" />
+      <Padding Left="0.100000001490116in" />
+    </Style>
+    <Selectors>
+      <StyleSelector Type="TextBox" StyleName="Heading" />
+    </Selectors>
+  </StyleRule>
+  <StyleRule>
+    <Style VerticalAlign="Middle">
+      <BorderStyle Bottom="None" Right="None" />
+      <BorderColor Default="Silver" />
+      <Font Name="Segoe UI" Size="8pt"/>
+      <Padding Left="0.100000001490116in" />
+    </Style>
+    <Selectors>
+      <StyleSelector Type="TextBox" StyleName="Detail" />
+    </Selectors>
+  </StyleRule>
+  <StyleRule>
+    <Style>
+      <BorderStyle Bottom="Solid" />
+      <BorderColor Default="Silver" />
+    </Style>
+    <Selectors>
+      <StyleSelector Type="DetailSection" StyleName="DetailSection" />
+    </Selectors>
+  </StyleRule>
+  <StyleRule>
+    <Style>
+      <BorderStyle Bottom="Solid" />
+      <BorderColor Default="Silver" />
+      <Font Name="Segoe UI" Size="8pt"/>
+      <Padding Left="0.100000001490116in" />
+    </Style>
+    <Selectors>
+      <StyleSelector Type="GroupHeaderSection" StyleName="DetailHeading" />
+    </Selectors>
+  </StyleRule>
+  <StyleRule>
+    <Style>
+      <BorderStyle Bottom="Solid" />
+    </Style>
+    <Selectors>
+      <StyleSelector Type="ReportHeaderSection" StyleName="HeaderSection" />
+    </Selectors>
+  </StyleRule>
+</StyleSheet>
